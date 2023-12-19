@@ -7,12 +7,12 @@ import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Badge from 'react-bootstrap/Badge';
 import Button from 'react-bootstrap/Button';
-import Rating from '../components/Rating';
+import Rating from '../components/Rating.js';
 import { Helmet } from 'react-helmet-async';
-import LoadingBox from '../components/LoadingBox';
-import MessageBox from '../components/MessageBox';
-import { getError } from '../utils';
-import { Store } from '../Store';
+import LoadingBox from '../components/LoadingBox.js';
+import MessageBox from '../components/MessageBox.js';
+import { getError } from '../utils.js';
+import { Store } from '../Store.js';
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -62,7 +62,7 @@ function ProductScreen() {
     }
     ctxDispatch({
       type: 'CART_ADD_ITEM',
-      payload: { ...product, quantity },
+      payload: { ...product, quantity }
     });
     navigate('/cart');
   };

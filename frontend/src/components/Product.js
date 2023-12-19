@@ -1,17 +1,17 @@
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
-import Rating from './Rating';
+import Rating from './Rating.js';
 import axios from 'axios';
 import { useContext } from 'react';
-import { Store } from '../Store';
+import { Store } from '../Store.js';
 
 function Product(props) {
   const { product } = props;
 
   const { state, dispatch: ctxDispatch } = useContext(Store);
   const {
-    cart: { cartItems },
+    cart: { cartItems }
   } = state;
 
   const addToCartHandler = async (item) => {
@@ -24,7 +24,7 @@ function Product(props) {
     }
     ctxDispatch({
       type: 'CART_ADD_ITEM',
-      payload: { ...item, quantity },
+      payload: { ...item, quantity }
     });
   };
 
