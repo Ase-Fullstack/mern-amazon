@@ -134,3 +134,7 @@
     2. show user information
     3. create user update api
     4. update user info
+33. Publish To Heroku
+    1. create and config node project
+    2. serve build folder in frontend folder
+    3. Create heroku account
