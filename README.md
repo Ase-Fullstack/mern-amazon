@@ -138,3 +138,6 @@
     1. create and config node project
     2. serve build folder in frontend folder
     3. Create heroku account
+34. Add Sidebar and Search Box
+    1. add sidebar
+    2. add search box
