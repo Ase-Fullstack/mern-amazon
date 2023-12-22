@@ -149,35 +149,39 @@
     1. define protected route component
     2. define admin route component
     3. add menu for admin in header
-37. Create Dashboard Screen 
-    1. create dashboard ui 
-    2. implement backend api 
+37. Create Dashboard Screen
+    1. create dashboard ui
+    2. implement backend api
     3. connect ui to backend
-38.  Manage Products
-    1. create products list ui
-    2. implement backend api
-    3. fetch data
-39. Create Product
+38. Manage Products
+39. create products list ui
+40. implement backend api
+41. fetch data
+42. Create Product
     1. create products button
     2. implement backend api
     3. handle on click
-39. Create Product
+43. Create Product
     1. create products button
     2. implement backend api
     3. handle on click
-40. Create Edit Product
+44. Create Edit Product
     1. create edit button
     2. create edit product ui
     3. dispaly product info in the input boxes
-41. Implement Update Product
+45. Implement Update Product
     1. create edit product backend api
     2. handle update click
-42. Upload Product Image
+46. Upload Product Image
     1. create cloudinary account
     2. use the api key in env file
     3. handle upload file
     4. implement backend api to upload
-43. Delete Product
+47. Delete Product
     1. show delete button
     2. implement backend api
     3. handle on click
+48. List Orders
+    1. create order list screen
+    2. implement backend api
+    3. fetch and display orders
