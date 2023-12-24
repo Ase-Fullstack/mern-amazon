@@ -44,6 +44,7 @@ productRouter.put(
       product.slug = req.body.slug;
       product.price = req.body.price;
       product.image = req.body.image;
+      product.images = req.body.images;
       product.category = req.body.category;
       product.brand = req.body.brand;
       product.countInStock = req.body.countInStock;
@@ -87,7 +88,7 @@ productRouter.post(
       const review = {
         name: req.user.name,
         rating: Number(req.body.rating),
-        comment: req.body.comment,
+        comment: req.body.comment
       };
       product.reviews.push(review);
       product.numReviews = product.reviews.length;
@@ -99,7 +100,7 @@ productRouter.post(
         message: 'Review Created',
         review: updatedProduct.reviews[updatedProduct.reviews.length - 1],
         numReviews: product.numReviews,
-        rating: product.rating,
+        rating: product.rating
       });
     } else {
       res.status(404).send({ message: 'Product Not Found' });
